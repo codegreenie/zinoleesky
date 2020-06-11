@@ -1,7 +1,7 @@
 var routes = [
   {
     name: 'main',
-    path: '/',
+    path: '/main/',
     url: './main.html'
     },
     {

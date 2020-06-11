@@ -1,0 +1,617 @@
+<div class="page" data-name="dashboard">
+
+  <div class="fab fab-right-bottom" style="bottom:62px;">
+    <a href="#" style="background-color: #043a7a;" class="animated" id="lightbulb">
+      <i class="icon material-icons">lightbulb_outline</i>
+      <i class="icon material-icons">close</i>
+    </a>
+    <div class="fab-buttons fab-buttons-top">
+      <a href="/about/" class="fab-label-button" style="background-color: #043a7a;" id="about-btn">
+        <span><i class="icon material-icons">info_outline</i></span>
+        <span class="fab-label">About</span>
+      </a>
+      
+      <a href="https://play.google.com/store/apps/details?id=com.codegreenie.quickbankcodes" class="fab-label-button external" style="background-color: #043a7a;" id="remove-ads-btn">
+        <span><i class="icon material-icons">card_giftcard</i></span>
+        <span class="fab-label">Check for updates</span>
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=com.codegreenie.quickbankcodes" class="fab-label-button external" style="background-color: #043a7a;" id="rate-btn">
+        <span><i class="icon material-icons">star</i></span>
+        <span class="fab-label">Rate 5 <i class="icon f7-icons">star</i> on Playstore</span>
+      </a>
+
+      <a href="#" class="fab-label-button share-btn" style="background-color: #043a7a;">
+        <span><i class="icon material-icons">share</i></span>
+        <span class="fab-label">Share App</span>
+      </a>
+
+      <a href="#" class="how-to-use-button fab-label-button" style="background-color: #043a7a;">
+        <span><i class="icon material-icons">help_outline</i></span>
+        <span class="fab-label">How to use?</span>
+      </a>
+    </div>
+  </div>
+
+
+      <div class="navbar">
+              <div class="navbar-inner text-color-white" style="background-color: #043a7a;">
+                <div class="left">
+                  &nbsp;
+                </div>
+                <div class="title">Quick Banking</div>
+                <div class="right">
+                  
+
+                    
+                    
+                    <a href="#" class="link icon-only searchbar-enable text-color-white" data-searchbar=".searchbar">
+                      <i class="icon f7-icons">search</i>
+                    </a>
+                    <i class="icon f7-icons share-btn ios-only">share</i>
+                    <i class="icon material-icons share-btn md-only">share</i>
+                    <span class="md-only">&nbsp;</span>
+                  
+                </div>
+
+                <form class="searchbar searchbar-expandable">
+                    <div class="searchbar-inner">
+                      <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search Bank or USSD"/>
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                      </div>
+                      <span class="searchbar-disable-button if-not-aurora">Cancel</span>
+                    </div>
+                  </form>
+
+      
+              </div>
+            </div>
+  
+
+
+  <div class="page-content" style="padding-bottom:40px;padding-top:36px;">
+
+    
+
+
+
+    <div class="block-title" id="block-title-my-banks">My Bank(s)</div>
+
+
+    
+
+    <div class="list no-hairlines-md no-hairlines-ios" id="favorite-banks-list" style="margin-bottom:0px;">
+      
+
+              <ul id="favorite-banks-list-ul">
+
+              
+
+              </ul>
+
+            </div>
+
+
+
+            <div class="searchbar-backdrop"></div>
+
+    <div class="list simple-list searchbar-not-found">
+      <ul>
+        <li>Bank not found</li>
+      </ul>
+    </div>
+
+
+           
+
+           <div class="block-title" id="block-title-all-banks">All Banks</div>
+
+           <div class="list no-hairlines-md no-hairlines-ios banks-list searchbar-found search-list">
+              <ul>
+
+              
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/accessbank.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('accessbank')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/accessbank/" class="text-color-black">
+                        Access Bank
+                      </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                        <a href="/accessbank/" class="text-color-black"  style="margin-top:10px;">
+                        <span>*901#</span>
+                        &nbsp;
+                        </a>
+                        
+                          <a href="#" style="color:#043a7a;" onclick="makeCall('*901#')">
+                          <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                          </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/diamond.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('diamond')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/diamond/" class="text-color-black">
+                          Diamond Bank
+                        </a>
+                        </div>
+                      <div class="item-after text-color-black">
+                        <a href="/diamond/" class="text-color-black"  style="margin-top:10px;">
+                        <span>*426#</span>
+                        &nbsp;
+                        </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*426#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/ecobank.jpeg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('ecobank')"></div>
+                    <div class="item-inner">
+                      
+                      <div class="item-title">
+                        <a href="/ecobank/" class="text-color-black">
+                        Ecobank
+                        </a>
+                      </div>
+                      <div class="item-after text-color-black">
+                        <a href="/ecobank/" class="text-color-black"  style="margin-top:10px;">
+                        <span>*326#</span>
+                        &nbsp;
+                        </a>
+                      
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*326#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/fcmb.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('fcmb')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/fcmb/" class="text-color-black">
+                          FCMB
+                        </a>
+                      </div>
+                      <div class="item-after text-color-black dashboard-tooltip-1">
+                        <a href="/fcmb/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*329#</span>
+                        &nbsp;
+                        </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*329#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/fidelity.jpeg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('fidelity')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/fidelity/" class="text-color-black">
+                        Fidelity Bank
+                        </a>
+                      </div>
+                      <div class="item-after text-color-black">
+                        <a href="/fidelity/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*770#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*770#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/firstbank.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('firstbank')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/firstbank/" class="text-color-black">
+                        First Bank
+                        </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                        <a href="/first/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*894#</span>
+                        &nbsp;
+                        </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*894#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/gtb.jpeg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('gtbank')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/gtbank/" class="text-color-black">
+                          GT Bank
+                        </a>
+                        </div>
+                      <div class="item-after text-color-black">
+                        <a href="/gtbank/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*737#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*737#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/heritage.jpg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('heritage')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/heritage/" class="text-color-black">
+                        Heritage Bank
+                        </a>
+                     </div>
+                      <div class="item-after text-color-black">
+                        <a href="/heritage/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*322*030#</span>
+                        &nbsp;
+                        </a>
+                        <a href="#" style="color:#043a7a" onclick="makeCall('*322*030#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/jaiz.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('jaiz')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/jaiz/" class="text-color-black">
+                          Jaiz Bank
+                        </a>
+                        </div>
+                      <div class="item-after text-color-black">
+                        <a href="/jaiz/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*389*301#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a" onclick="makeCall('*389*301#')">
+                          <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/keystone.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('keystone')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/keystone/" class="text-color-black">
+                        Keystone Bank
+                        </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                        <a href="/keystone/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*7111#</span>
+                        &nbsp;
+                        </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*7111#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/polaris.jpeg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('polaris')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                          <a href="/polaris/" class="text-color-black">
+                      Polaris Bank
+                    </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                        <a href="/polaris/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*833#</span>
+                        &nbsp;
+                        </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*833#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+
+              <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/stanbic.jpeg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('stanbic')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/stanbic/" class="text-color-black">
+                        Stanbic IBTC Bank
+                      </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                        <a href="/stanbic/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*909#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*909#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/sterling.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('sterling')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/sterling/" class="text-color-black">
+                          Sterling Bank
+                        </a>
+                        </div>
+                      <div class="item-after text-color-black">
+                        <a href="/sterling/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*822#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*822#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/uba.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('uba')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/uba/" class="text-color-black">
+                      UBA
+                        </a>
+                      </div>
+                      <div class="item-after text-color-black">
+                        <a href="/uba/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*919#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*919#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/unionbank.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('union')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/union/" class="text-color-black">
+                      Union Bank
+                        </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                        <a href="/union/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*826#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*826#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/unity.jpeg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('unity')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/unity/" class="text-color-black">
+                          Unity Bank
+                        </a>
+                        </div>
+                      <div class="item-after text-color-black">
+                        <a href="/unity/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*7799#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*7799#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+                
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/wema.jpeg'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('wema')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/wema/" class="text-color-black">
+                          Wema Bank
+                        </a>
+                      </div>
+                      <div class="item-after text-color-black">
+                        <a href="/wema/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*945#</span>
+                        &nbsp;
+                      </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*945#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-media" style="border:solid 2px #ededed;border-radius:50%; width:60px;height:60px;background:url('imgs/zenith.png'); background-size:cover; background-repeat:no-repeat;" onclick="routeTo('zenith')"></div>
+                    <div class="item-inner">
+                      <div class="item-title">
+                        <a href="/zenith/" class="text-color-black">
+                          Zenith Bank
+                        </a>
+                        </div>
+                      <div class="item-after text-color-black">
+                        <a href="/zenith/" class="text-color-black"  style="margin-top:10px;">
+                        <span style="margin-top:10px;">*966#</span>
+                        &nbsp;
+                        </a>
+                        <a href="#" style="color:#043a7a;" onclick="makeCall('*966#')">
+                        <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+              </ul>
+            </div>
+
+         
+
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+                  <!-- Swipe to close sheet -->
+                    <div class="sheet-modal my-sheet-swipe-to-close demo-sheet-swipe-to-step" style="height:auto; --f7-sheet-bg-color: #fff; padding-bottom: 10px;">
+                      <div class="sheet-modal-inner">
+                        <div class="page-content">
+
+
+
+              <div class="row no-gap" style="padding:0px 15px;">
+
+              <div class="col-25">
+                <img src="imgs/qb.png" style="margin:10px auto 0px; display: block; max-width: 60px;">
+              </div>
+
+              <div class="col-75">
+                <h3 style="margin-bottom: 0px;">Welcome to <br> Quick Banking!</h3>
+                <p><b>Click on your bank logo / icon to get started!</b> <br></p>
+              </div>
+
+              <div class="col">
+                <button type="button" class="button col button-fill color-blue button-large" style="background-color:#043a7a;" id="close-intro-button">Continue</button>
+              </div>
+
+             </div>
+
+           
+
+
+
+                        </div>
+                      </div>
+                    </div>
+
+
+           </div>
+

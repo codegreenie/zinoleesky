@@ -1,0 +1,76 @@
+/* Override CSS*/
+.page-content{
+	background-color: #fff;
+}
+
+@font-face {
+        font-family: "Montserrat Medium";
+        src: url("../fonts/Montserrat-Medium.ttf");
+    }
+
+*{
+    font-family: "Montserrat Medium";
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.text-center{
+	text-align: center !important;
+}
+.access-bank-handler:after{
+	background-color: #043a7a;
+}
+.diamond-handler:after{
+	background-color: #b3d03a;
+}
+.ecobank-handler:after{
+	background-color: #016098;
+}
+.firstbank-handler:after{
+	background-color: #03476e;
+}
+.fidelity-handler:after{
+	background-color: #0f227e;
+}
+.fcmb-handler:after{
+	background-color: #5c2684;
+}
+.gtbank-handler:after{
+	background-color: #df4308;
+}
+.heritage-handler:after{
+	background-color: #4ba146;
+}
+.jaiz-handler:after{
+	background-color: #255a38;
+}
+.keystone-handler:after{
+	background-color: #133f77;
+}
+.polaris-handler:after{
+	background-color: #8934ad;
+}
+.sterling-handler:after{
+	background-color: #db353a;
+}
+.stanbic-handler:after{
+	background-color: #00529c;
+}
+.uba-handler:after{
+	background-color: #d42e12;
+}
+.unity-handler:after{
+	background-color: #314551;
+}
+.union-handler:after{
+	background-color: #00aff0;
+}
+.wema-handler:after{
+	background-color: #990b81;
+}
+.zenith-handler:after{
+	background-color: #e3000f;
+}

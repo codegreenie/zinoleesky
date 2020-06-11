@@ -7,7 +7,7 @@
     <author email="codegreenie@gmail.com" href="https://twitter.com/codegreenie">
         @codegreenie
     </author>
-    <content src="www/index.html" />
+    <content src="index.html" />
     <icon src="icon.png" />
     <preference name="StatusBarBackgroundColor" value="#043a7a" />
     <preference name="orientation" value="portrait" />

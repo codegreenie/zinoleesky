@@ -483,7 +483,7 @@ $$(document).on('page:init', '.page[data-name="opay"]', function (e){
       $$(".opay-add-2-my-banks").hide();
       $$(".opay-remove-from-my-banks").show();
 
-      toastMe("opay added to My Bank(s)");
+      toastMe("OPay added to My Bank(s)");
     }
     
   });
@@ -509,7 +509,7 @@ $$(document).on('page:init', '.page[data-name="opay"]', function (e){
         $$(".opay-add-2-my-banks").show();
         $$(".opay-remove-from-my-banks").hide();
         
-        toastMe("opay removed from My Bank(s)");
+        toastMe("OPay removed from My Bank(s)");
         break;
       }
 

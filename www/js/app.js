@@ -1,4 +1,4 @@
-var shareApp, changeStatusBarColor, makeCall, setMerchantCode, routeTo, prepareIntAd, showInterstitialAd, showBottomBannerAd, pickContact;
+var shareApp, changeStatusBarColor, makeCall, setMerchantCode, routeTo, prepareIntAd, showInterstitialAd, showBottomBannerAd, pickContact, shareMsg, shareUrl;
 // Dom7
 var $$ = Dom7;
 
@@ -14,7 +14,7 @@ var app = new Framework7({
 });
 
 var mainView = app.views.create('.view-main', {
-  url : './main.html',
+  url : './index.html',
   name : 'main',
   iosSwipeBack : false,
   router : true
@@ -42,6 +42,7 @@ document.addEventListener("deviceready", deviceIsReady, false);
 
 
 function deviceIsReady(){
+
 
 
   pickContact = function(theFieldId){
@@ -87,10 +88,10 @@ shareApp = function(){
 // this is the complete list of currently supported params you can pass to the plugin (all optional)
 var options = {
 
-  message: 'USSD banking made perfect! Download Quick Banking App on Google Play Store - 5MB', 
+  message: shareMsg, 
   subject: 'Quick Banking', // fi. for email
   files: [], // an array of filenames either locally or remotely
-  url: 'https://play.google.com/store/apps/details?id=com.codegreenie.quickbankcodes',
+  url: shareUrl,
   chooserTitle: 'Share via'
 };
 
@@ -374,6 +375,17 @@ $$(document).on('page:afterin', '.page[data-name="dashboard"]', function (e){
   });
   
 $$(document).on('page:init', '.page[data-name="dashboard"]', function (e){
+
+  if (app.theme == "md") {
+    shareMsg = 'USSD banking made perfect! Download Quick Banking on Google Play Store';
+    shareUrl = 'https://play.google.com/store/apps/details?id=com.codegreenie.quickbankcodes';
+  }
+  else{
+    shareMsg = 'USSD banking made perfect! Download Quick Banking on Apple App Store';
+    shareUrl = 'https://apps.apple.com/ng/app/instagram/id389801252';
+  }
+
+  $$("#rate-update-link").prop("href", shareUrl);
 
   if (!window.localStorage.getItem("my_banks")) {
     

@@ -2,7 +2,7 @@ var routes = [
   {
     name: 'main',
     path: '/',
-    url: './main.html'
+    url: './index.html'
     },
     {
     name: 'dashboard',
@@ -58,6 +58,11 @@ var routes = [
     name: 'keystone',
     path: '/keystone/',
     url: './keystone.html'
+    },
+    {
+    name: 'opay',
+    path: '/opay/',
+    url: './opay.html'
     },
     {
     name: 'polaris',

@@ -429,6 +429,115 @@ $$(document).on('page:init', '.page[data-name="keystone"]', function (e){
 
 
 
+
+
+$$(document).on('page:afterin', '.page[data-name="opay"]', function (e){
+  changeStatusBarColor("#1dcf9f");
+});
+$$(document).on('page:init', '.page[data-name="opay"]', function (e){
+
+
+  var searchbar = app.searchbar.create({
+    el: '.opay-searchbar',
+    searchContainer : '.opay-search-list',
+    searchIn : '.item-title, .item-after'
+  });
+
+  $$(".opay-add-2-my-banks, .opay-remove-from-my-banks").hide();
+
+
+  var myBanks = window.localStorage.getItem("my_banks");
+  myBanks = JSON.parse(myBanks);
+
+
+  for(q = 0; q < myBanks.length; q++){
+
+    if (myBanks[q]["bank_path"] == "opay") {
+      $$(".opay-remove-from-my-banks").show();
+      $$(".opay-add-2-my-banks").hide();
+      break;
+    }
+    else{
+      $$(".opay-add-2-my-banks").show();
+      $$(".opay-remove-from-my-banks").hide();
+    }
+
+  }
+
+
+
+
+  $$(".opay-add-2-my-banks").click(function(){
+    if(myBanks.length == 4){
+      toastMe("Maximum of 3 banks can be added to <b>My Bank(s)</b>");
+    }
+    else{
+      var accessBankDetails = {
+        "bank_path" : "opay",
+        "bank_image" : "opay.png",
+        "bank_ussd" : "*955#",
+        "bank_name" : "OPay"
+      }
+      myBanks.push(accessBankDetails);
+      window.localStorage.setItem("my_banks", JSON.stringify(myBanks));
+      $$(".opay-add-2-my-banks").hide();
+      $$(".opay-remove-from-my-banks").show();
+
+      toastMe("opay added to My Bank(s)");
+    }
+    
+  });
+
+
+
+
+
+
+  $$(".opay-remove-from-my-banks").click(function(){
+
+    for(q = 0; q < myBanks.length; q++){
+
+      if (myBanks[q]["bank_path"] == "opay") {
+
+        var theIndex = myBanks.indexOf(myBanks[q]);
+        if (theIndex >  -1) {
+          myBanks.splice(theIndex, 1);
+          
+        }
+
+        window.localStorage.setItem("my_banks", JSON.stringify(myBanks));
+        $$(".opay-add-2-my-banks").show();
+        $$(".opay-remove-from-my-banks").hide();
+        
+        toastMe("opay removed from My Bank(s)");
+        break;
+      }
+
+    }  
+
+  });
+
+
+  $$(".left .link").click(function(){
+      showInterstitialAd();
+  });
+
+     
+    
+      
+});
+
+
+
+
+
+
+
+
+
+
+
+
 $$(document).on('page:afterin', '.page[data-name="polaris"]', function (e){
   changeStatusBarColor("#8934ad");
 });

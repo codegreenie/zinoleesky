@@ -378,11 +378,11 @@ $$(document).on('page:init', '.page[data-name="dashboard"]', function (e){
 
   if (app.theme == "md") {
     shareMsg = 'USSD banking made perfect! Download Quick Banking on Google Play Store';
-    shareUrl = 'https://play.google.com/store/apps/details?id=com.codegreenie.quickbankcodes';
+    shareUrl = 'http://onelink.to/2w3zpp';
   }
   else{
     shareMsg = 'USSD banking made perfect! Download Quick Banking on Apple App Store';
-    shareUrl = 'https://apps.apple.com/ng/app/instagram/id389801252';
+    shareUrl = 'http://onelink.to/2w3zpp';
   }
 
   $$("#rate-update-link").prop("href", shareUrl);

@@ -65,6 +65,11 @@ var routes = [
     url: './opay.html'
     },
     {
+    name: 'paga',
+    path: '/paga/',
+    url: './paga.html'
+    },
+    {
     name: 'polaris',
     path: '/polaris/',
     url: './polaris.html'
@@ -114,6 +119,4 @@ var routes = [
     path: '/privacy/',
     url: './privacy.html'
     }
-
-    
   ];

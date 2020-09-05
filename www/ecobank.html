@@ -103,7 +103,69 @@
                 </li>
 
 
-                
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <a href="#" class="text-color-black">
+                      <div class="item-title">
+                        <a href="#" class="sheet-open text-color-black" data-sheet=".ecobank-transfer">
+                      Transfer (Ecobank)
+                        </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                         <a href="#" class="sheet-open" data-sheet=".ecobank-transfer" style="color:#016098;">
+                          <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                         </a>  
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+
+                <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <a href="#" class="text-color-black">
+                      <div class="item-title">
+                        <a href="#" class="sheet-open text-color-black" data-sheet=".ecobank-transfer-others">
+                      Transfer (Other Banks)
+                    </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                         <a href="#" class="sheet-open" data-sheet=".ecobank-transfer-others" style="color:#016098;">
+                          <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                         </a>  
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+
+                 <li style='padding-bottom:10px;'>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <a href="#" class="text-color-black">
+                      <div class="item-title">
+                        <a href="#" class="text-color-black" onclick="makeCall('*326*0#')">
+                        Check Balance
+                      </a>
+                    </div>
+                      <div class="item-after text-color-black">
+                         <a href="#" style="color:#016098;" onclick="makeCall('*326*0#')">
+                          <i class="f7-icons" style="font-size:38px;">phone_round</i>
+                         </a>  
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
 
 
                
@@ -246,6 +308,51 @@
 
 
 
+                  <div class="sheet-modal demo-sheet-swipe-to-step ecobank-transfer" style="height:auto">
+                <div class="sheet-modal-inner">
+                  <div class="swipe-handler ecobank-handler"></div>
+                  <div class="sheet-modal-swipe-step">
+                    <div class="padding-horizontal padding-bottom">
+                        
+                         <div class="list no-hairlines-md color-theme-gray">
+                          <ul>
+
+                            <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label">Account Number</div>
+                                <div class="item-input-wrap">
+                                  <input type="tel" placeholder="Enter Account Number" maxlength="10" id="ecobank-transfer-acc-no">
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                            </li>
+
+                            <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label">Amount</div>
+                                <div class="item-input-wrap">
+                                  <input type="tel" placeholder="Enter Amount (NGN)" maxlength="6" id="ecobank-transfer-amount">
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                            </li>
+
+                          </ul>
+                        </div>
+
+              
+                        <a class="button button-large button-fill" id="ecobank-transfer-btn" style="background-color:#016098;">Transfer (Ecobank)</a>
+                        <div class="margin-top text-align-center" id="expand-ecobank-transfer">
+                          <i class="icon f7-icons">info_round</i>&nbsp;About Transfer (Ecobank)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-title block-title-medium margin-top">Transfer (Ecobank):</div>
+                    <div class="block">
+                      <p>Send money to a Ecobank account. Sending money to accounts of the same bank is processed in a faster time, and processing fee is always cheaper.</p>
+                    </div>
+                  </div>
+                </div>
 
 
 
@@ -256,6 +363,51 @@
 
 
 
+                 <div class="sheet-modal demo-sheet-swipe-to-step ecobank-transfer-others" style="height:auto">
+                <div class="sheet-modal-inner">
+                  <div class="swipe-handler ecobank-handler"></div>
+                  <div class="sheet-modal-swipe-step">
+                    <div class="padding-horizontal padding-bottom">
+                        
+                         <div class="list no-hairlines-md color-theme-gray">
+                          <ul>
+
+                            <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label">Account Number</div>
+                                <div class="item-input-wrap">
+                                  <input type="tel" placeholder="Enter Account Number" maxlength="10" id="ecobank-transfer-others-acc-no">
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                            </li>
+
+                            <li class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label">Amount</div>
+                                <div class="item-input-wrap">
+                                  <input type="tel" placeholder="Enter Amount (NGN)" maxlength="6" id="ecobank-transfer-others-amount">
+                                  <span class="input-clear-button"></span>
+                                </div>
+                              </div>
+                            </li>
+
+                          </ul>
+                        </div>
+
+              
+                        <a class="button button-large button-fill" id="ecobank-transfer-others-btn" style="background-color:#016098;">Transfer (Other Banks)</a>
+                        <div class="margin-top text-align-center" id="expand-ecobank-transfer-others">
+                          <i class="icon f7-icons">info_round</i>&nbsp;About Transfer (Other Banks)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-title block-title-medium margin-top">Transfer (Other Banks):</div>
+                    <div class="block">
+                      <p>Send money to other Bank account. Sending money to accounts outside Ecobank may take a longer time to process, and processing fee is always higher.</p>
+                    </div>
+                  </div>
+                </div>
 
 
 

@@ -85,6 +85,11 @@ var routes = [
     url: './stanbic.html'
     },
     {
+    name: 'sc',
+    path: '/sc/',
+    url: './sc.html'
+    },
+    {
     name: 'uba',
     path: '/uba/',
     url: './uba.html'

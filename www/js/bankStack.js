@@ -84,6 +84,12 @@ var stack = [
     path: 'stanbic'
     },
     {
+    name: 'Standard Chatered',
+    logo: 'sc.png',
+    code: '*977#',
+    path: 'sc'
+    },
+    {
     name: 'Sterling Bank',
     logo: 'sterling.png',
     code: '*822#',

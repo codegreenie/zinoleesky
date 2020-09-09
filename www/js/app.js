@@ -546,21 +546,7 @@ $$(document).on('page:init', '.page[data-name="dashboard"]', function (e){
 
 
 
-    function returnShakeGuess(){
-      var guessNo = Math.floor(Math.random() * 25) + 1;
-      return guessNo;  
-    }
-    var luckyShakeNumber = returnShakeGuess();
-    console.log(luckyShakeNumber);
-    if (luckyShakeNumber == 9) {
-      window.setTimeout(function(){
-       $$("#lightbulb").addClass("shake");
-      }, 2500);
-      window.setTimeout(function(){
-        $$("#lightbulb").removeClass("shake");
-      }, 2000);
-      
-    }
+  
 
 });
 

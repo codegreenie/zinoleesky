@@ -1,37 +1,71 @@
 <div class="page" data-name="dashboard">
 
-  <div class="fab fab-right-bottom" style="bottom:62px;">
-    <a href="#" style="background-color: #043a7a;" class="animated" id="lightbulb">
-      <i class="icon material-icons">lightbulb_outline</i>
-      <i class="icon material-icons">close</i>
-    </a>
-    <div class="fab-buttons fab-buttons-top">
-      <a href="/about/" class="fab-label-button" style="background-color: #043a7a;">
-        <span class="md-only"><i class="icon material-icons">info_outline</i></span>
-        <span class="ios-only"><i class="icon f7-icons">info_round</i></span>
-        <span class="fab-label">About</span>
-      </a>
-      
 
-      <a href="http://onelink.to/2w3zpp" class="fab-label-button external" style="background-color: #043a7a;">
-        <span class="md-only"><i class="icon material-icons">star</i></span>
-        <span class="ios-only"><i class="icon f7-icons">star</i></span>
-        <span class="fab-label">Rate / Check updates</span>
-      </a>
+  <div class="popover more-options" style="width: 180px;">
+    <div class="popover-inner">
+      <div class="list">
+        <ul id="">
 
-      <a href="#" class="fab-label-button share-btn" style="background-color: #043a7a;">
-        <span class="md-only"><i class="icon material-icons">share</i></span>
-        <span class="ios-only"><i class="icon f7-icons">share</i></span>
-        <span class="fab-label">Share App</span>
-      </a>
+          <li>
+            <a class='list-button item-link share-btn popover-close' href='#'>
+                <span class="md-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon material-icons">share</i></span>
+                <span class="ios-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon f7-icons">share</i></span>
+                &nbsp;
+                Share app
+           </a>
+          </li>
 
-      <a href="#" class="how-to-use-button fab-label-button" style="background-color: #043a7a;">
-        <span class="md-only"><i class="icon material-icons">help_outline</i></span>
-        <span class="ios-only"><i class="icon f7-icons">help_round</i></span>
-        <span class="fab-label">How to use?</span>
-      </a>
+
+          <li>
+            <a class='list-button item-link external popover-close' href="http://onelink.to/2w3zpp">
+                <span class="md-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon material-icons">new_releases</i></span>
+                <span class="ios-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon f7-icons">bag</i></span>
+                &nbsp;
+                Update app
+           </a>
+          </li>
+
+
+           <li>
+            <a class='list-button item-link popover-close' href='/about/'>
+                <span class="md-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon material-icons">info_outline</i></span>
+                <span class="ios-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon f7-icons">info_round</i></span>
+                &nbsp;
+                About
+           </a>
+          </li>
+
+
+          <li>
+            <a class='list-button item-link how-to-use-button popover-close' href='#'>
+                <span class="md-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon material-icons">help_outline</i></span>
+                <span class="ios-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon f7-icons">help_round</i></span>
+                &nbsp;
+                How to use
+           </a>
+          </li>
+
+
+
+
+          <li>
+            <a class='list-button item-link external popover-close' href="https://play.google.com/store/apps/dev?id=8403908509363603689">
+                <span class="md-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon material-icons">card_giftcard</i></span>
+                <span class="ios-only" style="font-weight: bold; font-size: 18px; margin-left:5px;"><i class="icon f7-icons">box</i></span>
+                &nbsp;
+                More apps
+           </a>
+          </li>
+
+        
+          
+        </ul>
+      </div>
     </div>
   </div>
+
+
+ 
 
 
       <div class="navbar">
@@ -45,11 +79,14 @@
 
                     
                     
-                    <a href="#" class="link icon-only searchbar-enable text-color-white" data-searchbar=".searchbar">
+                    <a href="#" class="link icon-only searchbar-enable text-color-white" data-searchbar=".searchbar" style="width:40px;">
                       <i class="icon f7-icons">search</i>
                     </a>
-                    <i class="icon f7-icons share-btn ios-only">share</i>
-                    <i class="icon material-icons share-btn md-only">share</i>
+                   
+                     <a class="link popover-open text-color-white" href="#" data-popover=".more-options" style="width:40px;">
+                      <i class="icon f7-icons share-btn ios-only">more_vertical_fill</i>
+                      <i class="icon material-icons share-btn md-only">more_vert</i>
+                    </a>
                     <span class="md-only">&nbsp;</span>
                   
                 </div>

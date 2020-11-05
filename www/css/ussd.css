@@ -1,6 +1,7 @@
 /* Override CSS*/
 .page-content{
 	background-color: #fff;
+	padding-bottom:50px;
 }
 
 @font-face {
